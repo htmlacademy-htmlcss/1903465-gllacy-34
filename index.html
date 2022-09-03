@@ -5,8 +5,117 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="page-header">
+      <span class="header-logo">
+        <img class="logo-gllacy" src="" alt="Логотип интернет-магазина Gllacy.">
+      </span>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог</a>
+            <div class="navigation-submenu">
+              <div class="submenu-catalog">
+                <h3 class="submenu-title">Новинки</h3>
+                <ul class="submenu-list">
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-user-bar">
+        <a class="navigation-phone-link" href="tel+7 800 555-86-28" aria-label="Контактный телефон.">+7 800 555-86-28</a>
+        <div class="search-button-wrapper">
+          <button class="search-button">
+            <span class="visually-hidden">Поиск по сайту.</span>
+          </button>
+          <div class="search-form-wrapper">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
+              <input class="form-field" type="search" name="form-field" id="header-search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+        </div>
+        <div class="navigation-login-wrapper">
+          <button class="login-button" type="button">Вход</button>
+          <div class="auth-container">
+            <h3 class="auth-title">Личный кабинет</h3>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label for="login-email"></label>
+              <input class="form-input" type="email" name="login-email" id="login-email" placeholder="email@example.com" required>
+              <label for="password"></label>
+              <input class="form-input" type="password" name="password" id="password" placeholder="Введите пароль" value="123456" required>
+              <button class="button" type="submit">Войти</button>
+              <a class="auth-link" href="#">Забыли пароль?</a>
+              <a class="auth-link" href="#">Регистрация</a>
+            </form>
+          </div>
+        </div>
+        <div class="user-cart-wrapper">
+          <button class="cart-button" type="button">
+            <span class="navigation-user-text">2 товара</span>
+          </button>
+          <div class="cart-container">
+            <h3 class="cart-title">Корзина</h3>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <a class="cart-link" href="#">
+                  <img class="cart-image" src="#" alt="Мороженое с малиновым джемом.">
+                  <div>
+                    <h4 class="cart-item-title">Малинка</h4>
+                    <span class="cart-description">1&nbsp;кг х 310&nbsp;₽</span>
+                  </div>
+                </a>
+                <b class="cart-price">310&nbsp; ₽</b>
+                <button class="delete-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart-link" href="#">
+                  <img class="cart-image" src="#" alt="Ванильное мороженое с посыпкой.">
+                  <div>
+                    <h4 class="cart-item-title">Бабл-гам</h4>
+                    <span class="cart-description">1,5&nbsp;кг х 320&nbsp;₽</span>
+                  </div>
+                </a>
+                <b class="cart-price">480&nbsp; ₽</b>
+                <button class="delete-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart-actions">
+              <button class="cart-order-button" type="button">Оформить заказ</button>
+              <b class="cart-price">Итого: 790&nbsp;₽</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    </main>
+    <footer>
 
+    </footer>
   </body>
 </html>

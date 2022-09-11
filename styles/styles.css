@@ -49,6 +49,7 @@ html {
 }
 
 body {
+  min-height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -103,6 +104,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1170px;
   margin: 0 auto;
 }
@@ -143,6 +146,10 @@ body {
 .search-button {
   padding: 6px;
   border-radius: 50%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .slider-content-title {

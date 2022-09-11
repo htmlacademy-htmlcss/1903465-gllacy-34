@@ -53,11 +53,230 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #2d3440;
   background-color: #feafc3;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-second {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid transparent;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.description {
+  margin: 0;
+  color: #565c66;
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.navigation-link {
+  padding: 6px 14px;
+  font-family: inherit;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+
+.navigation-submenu {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.submenu-title {
+  font-weight: 700;
+}
+
+.submenu-link {
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.navigation-phone-link {
+  line-height: 20px;
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.search-button {
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.slider-content-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slider-content-text {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.banners {
+  margin-bottom: 80px;
+}
+
+.banners-title {
+  margin-bottom: 55px;
+}
+
+.banner-content-title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.banner-description {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.product-title {
+  margin-bottom: 55px;
+}
+
+.product-card-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card-description {
+  margin-bottom: 16px;
+}
+
+.advantages {
+  margin-bottom: 80px;
+}
+
+.advantages-title {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.news {
+  margin-bottom: 80px;
+}
+
+.new-post-text {
+  margin-bottom: 12px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.new-post-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.delivery-title {
+  margin-bottom: 24px;
+}
+
+.form-label-wrapper {
+  display: flex;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.contacts-address {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.contacts-shedule {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.footer-menu-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.footer-menu-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2d3440;
+  text-decoration: none;
 }

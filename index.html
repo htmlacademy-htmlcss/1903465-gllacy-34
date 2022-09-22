@@ -13,26 +13,25 @@
         </span>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог</a>
+            <li class="navigation-item navigation-item-submenu">
+              <!-- Добавить для .navigation-link класс is-active для выделения активной ссылки-->
+              <a class="navigation-link" href="#">Каталог</a>
               <div class="navigation-submenu">
-                <div class="submenu-catalog">
-                  <h3 class="submenu-title">Новинки</h3>
+                <h3 class="submenu-title">Новинки</h3>
                   <ul class="submenu-list">
                     <li class="submenu-item">
-                      <a class="submenu-link" href="#">Сливочное</a>
+                      <a class="submenu-link" href="catalog.html">Сливочное</a>
                     </li>
                     <li class="submenu-item">
                       <a class="submenu-link" href="#">Щербеты</a>
                     </li>
                     <li class="submenu-item">
-                      <a class="submenu-link" href="#">Фруктовый лед</a>
+                      <a class="submenu-link" href="#">Фруктовый&nbsp;лед</a>
                     </li>
                     <li class="submenu-item">
                       <a class="submenu-link" href="#">Мелорин</a>
                     </li>
                   </ul>
-                </div>
               </div>
             </li>
             <li class="navigation-item">
@@ -51,9 +50,12 @@
               <span class="visually-hidden">Поиск по сайту.</span>
             </button>
             <div class="search-form-wrapper">
-              <form action="https://echo.htmlacademy.ru/" method="post">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
-                <input class="form-field" type="search" name="form-field" id="header-search" placeholder="Поиск по сайту">
+                <input class="field input-search" type="search" name="form-field" id="header-search" placeholder="Поиск по сайту">
+                <button class="delete-button input-reset-button" type="reset">
+                  <span class="visually-hidden">Очистить окно ввода.</span>
+                </button>
               </form>
             </div>
           </div>
@@ -90,7 +92,7 @@
                     <h4 class="cart-item-title">Малинка</h4>
                     <span class="cart-description">1&nbsp;кг х 310&nbsp;₽</span>
                   </div>
-                  <b class="cart-price">310&nbsp; ₽</b>
+                  <span class="cart-price">310&nbsp; ₽</span>
                   <button class="delete-button" type="button">
                     <span class="visually-hidden">Удалить товар из корзины.</span>
                   </button>
@@ -101,15 +103,15 @@
                     <h4 class="cart-item-title">Бабл-гам</h4>
                     <span class="cart-description">1,5&nbsp;кг х 320&nbsp;₽</span>
                   </div>
-                  <b class="cart-price">480&nbsp; ₽</b>
+                  <span class="cart-price">480&nbsp; ₽</span>
                   <button class="delete-button" type="button">
                     <span class="visually-hidden">Удалить товар из корзины.</span>
                   </button>
                 </li>
               </ul>
               <div class="cart-actions">
-                <button class="cart-order-button" type="button">Оформить заказ</button>
-                <b class="cart-price">Итого: 790&nbsp;₽</b>
+                <button class="button-dark cart-order-button" type="button">Оформить заказ</button>
+                <span class="cart-price">Итого: 790&nbsp;₽</span>
               </div>
             </div>
             <div class="cart-container-empty">Ваша корзина пока пуста</div>
@@ -118,10 +120,10 @@
       </header>
       <main class="main-index main-container">
         <h1 class="visually-hidden">Интернет-магазин мороженого Глейси.</h1>
-        <section class="promo-slider">
-          <h2 class="visually-hidden">Промо-слайдер.</h2>
-          <div class="slider-wrapper">
-            <div class="slider-slide">
+        <section class="slider">
+          <h2 class="visually-hidden">Реклама мороженого.</h2>
+          <div class="slider-slides">
+            <div class="slider-slide is-active">
               <div class="slider-content-block">
                 <h3 class="slider-content-title">Нежный пломбир с&nbsp;клубничным джемом</h3>
                 <p class="slider-content-text">Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом<br>– это&nbsp;идеальный десерт для всей семьи.</p>
@@ -155,9 +157,11 @@
           <div class="slider-button-wrapper">
             <button class="slider-button slider-prev">
               <span class="visually-hidden">Предыдущий слайд.</span>
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"  fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"/></svg>
             </button>
             <button class="slider-button slider-next">
               <span class="visually-hidden">Следующий слайд.</span>
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"  fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"/></svg>
             </button>
           </div>
           <div class="slider-footer-wrapper">
@@ -305,7 +309,7 @@
           <h2 class="visually-hidden">Новости.</h2>
           <div class="news-post">
             <h3 class="new-post-title">Новое в нашем блоге</h3>
-            <p class="new-post-subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</p>
+            <h4 class="new-post-subtitle">10 способов сервировки фруктовых щербетов к&nbsp;столу</h4>
           </div>
           <div class="news-subscribe">
             <div class="news-subscribe-container">
@@ -373,7 +377,7 @@
               <a class="contacts-phone-link" href="tel:+78128121212" aria-label="Контактный телефон.">+7 (812) 812-12-12</a>
             </div>
             <span class="contacts-shedule">(с 10 до 20 ежедневно)</span>
-            <button class="button-dark feedback-button" type="button">Форма обратной связи</button>
+            <a class="button-dark feedback-button" href="#">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -446,5 +450,6 @@
         </section>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -59,6 +59,18 @@ body {
   background-color: #feafc3;
 }
 
+.color-pink {
+  background-color: #feafc3;
+}
+
+.color-blue {
+  background-color: #69a9ff;
+}
+
+.color-yellow {
+  background-color: #fcc850;
+}
+
 .button {
   display: inline-block;
   padding: 12px 32px;
@@ -1166,8 +1178,19 @@ body {
   border-bottom: 1px solid rgba(45, 52, 64, 0.5);
 }
 
+.modal-container.is-open {
+  display: block;
+}
+
 .modal-container {
   display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 4;
 }
 
 .breadcrumbs {

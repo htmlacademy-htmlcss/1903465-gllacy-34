@@ -50,7 +50,7 @@ const initSlider = () => {
 initSlider();
 
 
-const modalOpenBtn = document.querySelector('.contacts-button');
+const modalOpenBtn = document.querySelector('.feedback-button');
 const modal = document.querySelector('.modal-container');
 const modalCloseBtn = document.querySelector('.modal-close-button');
 
@@ -68,5 +68,11 @@ document.addEventListener('keydown', (evt) => {
   if (evt.key === 'Escape') {
     evt.preventDefault();
     modal.classList.remove('is-open');
+  }
+});
+
+document.addEventListener('click', (evt) => {
+  if ( evt.target === modal) {
+   modal.classList.remove('is-open');
   }
 });

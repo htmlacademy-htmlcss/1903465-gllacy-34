@@ -9,8 +9,9 @@ const onSlideChange = (index) => {
   const activeSlide = document.querySelector('.slider-slide.is-active');
   const activeBullet = document.querySelector('.slider-pagination-button.is-active');
 
-  // document.body.style.backgroundColor = slides[index].dataset.color;
-  // slides.forEach((element) => (element.style.order = ""));
+  document.body.classList.remove('color-pink');
+  document.body.classList.remove('color-blue');
+  document.body.classList.remove('color-yellow');
   document.body.classList.add('${slider[index].dataset.class}');
   activeSlide.classList.remove("is__active");
   slides[index].classList.add("is__active");
@@ -50,26 +51,26 @@ const initSlider = () => {
 initSlider();
 
 
-// const modalOpenBtn = document.querySelector('.feedback-button');
-// const modal = document.querySelector('.modal-container');
-// const modalCloseBtn = document.querySelector('.modal-close-button');
+const modalOpenBtn = document.querySelector('.feedback-button');
+const modal = document.querySelector('.modal-container');
+const modalCloseBtn = document.querySelector('.modal-close-button');
 
-// modalOpenBtn.addEventListener('click', (evt) => {
-//   evt.preventDefault();
-// modal.classList.add('is-open');
-// });
+modalOpenBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+modal.classList.add('is-open');
+});
 
-// modalCloseBtn.addEventListener('click', (evt) => {
-//   evt.preventDefault();
-//   modal.classList.remove('is-open');
-//   });
+modalCloseBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.remove('is-open');
+  });
 
-// document.addEventListener('keydown', (evt) => {
-//   if (evt.key === 'Escape') {
-//     evt.preventDefault();
-//     modal.classList.remove('is-open');
-//   }
-// });
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    evt.preventDefault();
+    modal.classList.remove('is-open');
+  }
+});
 
 document.addEventListener('click', (evt) => {
   if ( evt.target === modal) {
